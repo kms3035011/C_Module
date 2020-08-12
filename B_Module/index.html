@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B_Module</title>
+    <link rel="stylesheet" href="./vendor/fontawesome/css/font-awesome.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/app.js"></script>
+</head>
+
+<body>
+    <div class="img-move"></div>
+    <div class="wrap">
+        <header>
+            <div class="logo">
+                <a href="#">내집꾸미기</a>
+            </div>
+            <nav>
+                <div class="menu">
+                    <a href="./layout/store.html">홈</a>
+                    <a href="#">온라인집들이</a>
+                    <a href="#">스토어</a>
+                    <a href="#">전문가</a>
+                    <a href="#">시공견적</a>
+                </div>
+            </nav>
+            <div class="user-menu">
+                <button class="login">로그인</button>
+                <button class="join">회원가입</button>
+            </div>
+        </header>
+        <section class="search">
+            <div class="box">
+                <input type="text" class="searchbox" placeholder="검색어를 입력하세요.">
+            </div>
+            <button class="searchbtn">검색</button>
+        </section>
+        <section class="store">
+            <div id="store">
+                <div class="store-list">
+                    <div class="item">
+                        <div class="item-img">
+                            <img src="./img/product/product_1.jpg" alt="img" title="img" data-idx="1">
+                        </div>
+                        <div class="item-text">
+                            <p>상품명 : </p>
+                            <p>브랜드명 : </p>
+                            <p>가격 : </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section>
+                <h2>장바구니</h2>
+
+                <div class="dropbox">
+                    <p>이곳에 상품을 넣어주세요</p>
+                </div>
+                <div class="cart">
+                    <div class="item-list">
+                        <div class="img-item">
+                            <div class="close">&times;</div>
+                            <img src="./img/product/product_1.jpg" alt="img" title="img">
+                        </div>
+                        <div class="text-info">
+                            <p>상품명 : </p>
+                            <p>브랜드명 : </p>
+                            <p>가격 : </p>
+                            <label>수량 : </label>
+                            <input type="number" class="count" min="1">
+                        </div>
+                        <div class="num-info">
+                            <p class="sum">222222</p>
+                        </div>
+                    </div>  
+                </div>
+                <div class="price-info">
+                    <p>총합계 : <span class="total-num">0원</span></p>
+                    <button id="openpop">구매하기</button>
+                </div>
+                <div class="wrap-box"></div>
+            </section>
+
+        </section>
+    </div>
+    <div id="popup">
+        <div class="inner">
+            <div class="row">
+                <div class="offset">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">구매자 이름</label>
+                            <input type="text" class="form-control" id="name" placeholder="구매자 이름을 입력하세요">
+                        </div>
+                        <label for="address">구매자 주소</label>
+                        <input type="text" class="form-control" id="address" placeholder="주소를 입력하세요">
+                        <button type="button" class="btn" id="buyok">구매확정</button>
+                        <button type="button" class="btn" id="buyno">취소</button>
+                    </form>
+                </div>
+            </div>
+            <div id="result">
+                <div class="inner">
+                    <h2>구매내역</h2>
+                    <canvas id="myCvs"></canvas>
+                    <button id="closeresult" class="btn btn-waring">닫기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

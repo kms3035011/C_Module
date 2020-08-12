@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A-Module</title>
+    <!-- <link rel="stylesheet" href="vendor/bootstrap431/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="./public/vendor/fontawesome/css/font-awesome.css">
+    <link rel="stylesheet" href="./public/css/app.css">
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <div class="logo">
+                <a href="#">온라인집들이</a>
+                <nav class="gnb">
+                    <ul>
+                        <li>
+                            <a href="#">홈</a>
+                            <a href="#">온라인집들이</a>
+                            <a href="./B_Module/index.html">스토어</a>
+                            <a href="#">전문가</a>
+                            <a href="#">시공견적</a>
+                        </li>
+                    </ul>
+                </nav>
+                <button class="login">로그인</button><button class="join">회원가입</button>
+            </div>
+        </header>
+        <section class="visual">
+			<input type="radio" name="slide" class="slide-animate-1" id="slide1" hidden checked="">
+			<input type="radio" name="slide" class="slide-animate-2" id="slide2" hidden>
+			<input type="radio" name="slide" class="slide-animate-3" id="slide3" hidden>
+			<input type="radio" name="slide" class="slide-animate-4" id="slide4" hidden>
+			<div class="slide">
+				<div class="slide-img">
+					<img src="./public/img/slide/slide1.jpg" alt="슬라이드1" title="슬라이드1">
+					<img src="./public/img/slide/slide2.jpg" alt="슬라이드2" title="슬라이드2">
+					<img src="./public/img/slide/slide3.jpg" alt="슬라이드3" title="슬라이드3">
+				</div>
+				<label for="slide-control left" for="slide-2" data-idx="1"> &Lt; </label>
+				<label for="slide-control left" for="slide-3" data-idx="2"> &Lt; </label>
+				<label for="slide-control left" for="slide-4" data-idx="3"> &Lt; </label>
+				<label for="slide-control left" for="slide-1" data-idx="4"> &Lt; </label>
+
+				<label for="slide-control right" for="slide-2" data-idx="1"> &Gt; </label>
+				<label for="slide-control right" for="slide-3" data-idx="2"> &Gt; </label>
+				<label for="slide-control right" for="slide-4" data-idx="3"> &Gt; </label>
+				<label for="slide-control right" for="slide-1" data-idx="4"> &Gt; </label>
+			</div>
+		</section>
+        <section class="online">
+            <h2><span>온라인집들이영역</span></h2>
+            <div class="card-set">
+                <div class="user-test">
+                    <div class="img">
+                       <img src="./public/img/house/1_before.jpg" alt="1" title="before">     
+                       <img src="./public/img/house/1_after.jpg" alt="1" title="after"> 
+                    </div>
+                    <div class="text">
+                        <p>작성자 : <span class="badge">user1</span></p>
+                        <p>평점 : <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></p>
+                    </div>
+                </div>
+                <div class="user-test">
+                    <div class="img">
+                        <img src="./public/img/house/2_before.jpg" alt="2" title="before">
+                        <img src="./public/img/house/2_after.jpg" alt="2" title="after">
+                    </div>
+                    <div class="text">
+                        <p>작성자 : <span class="badge">user2</span></p>
+                        <p>평점 : <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></p>
+                    </div>
+                </div>
+                <div class="user-test">
+                    <div class="img">
+                        <img src="./public/img/house/3_before.jpg" alt="3" title="before">
+                        <img src="./public/img/house/3_after.jpg" alt="3" title="after">
+                    </div>
+                    <div class="text">
+                        <p>작성자 : <span class="badge">user3</span></p>
+                        <p>평점 : <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></p>
+                    </div>
+                </div>
+                <div class="user-test">
+                    <div class="img">
+                        <img src="./public/img/house/4_before.jpg" alt="4" title="before">
+                        <img src="./public/img/house/4_after.jpg" alt="4" title="after">
+                    </div>
+                    <div class="text">
+                        <p>작성자 : <span class="badge">user4</span></p>
+                        <p>평점 : <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="expert">
+            <h2><span>전문가</span></h2>
+            <div class="card-list">
+                <div class="card-info">
+                    <div class="image">
+                        <img src="./public/img/expert/specialist1.jpg" alt="1" title="전문가1">
+                       
+                    </div> 
+                    <div class="back-info">
+                        <p>이름 : 전문가 1</p>
+                        <p>아이디 : specialist1</p>
+                        <button class="more-info">자세히 보기</button>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <div class="image">
+                        <img src="./public/img/expert/specialis2.jpg" alt="2" title="전문가2">
+                        
+                    </div>
+                    <div class="back-info">
+                        <p>이름 : 전문가 2</p>
+                        <p>아이디 : specialist2</p>
+                        <button class="more-info">자세히 보기</button>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <div class="image">
+                        <img src="./public/img/expert/specialist3.jpg" alt="3" title="전문가3">
+                    </div>
+                    <div class="back-info">
+                        <p>이름 : 전문가 3</p>
+                        <p>아이디 : specialist3</p>
+                        <button class="more-info">자세히 보기</button>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <div class="image">
+                        <img src="./public/img/expert/specialist4.jpg" alt="4" title="전문가4">
+                        
+                        </div>
+                    <div class="back-info">
+                        <p>이름 : 전문가 4</p>
+                        <p>아이디 : specialist4</p>
+                        <button class="more-info">자세히 보기</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="review">
+            <h2><span>후기</span></h2>
+            <div class="people-review">
+                <div class="human">
+                    <p>전문가 이름 : <span class="badge">전문가 2</span></p>
+                    <p>전문가 아이디 : specialist2</p>
+                    <p>작성자 이름 : 박재현</p>
+                    <p>작성자 아이디 : <span class="badge">park</span></p>
+                    <p>비용 : 3,200,000</p>
+                    <p>원하던 아이언맨 컨셉으로 너무 잘 꾸며주셨습니다!</p>
+                    <p>평점 : <i class ="fa fa-star"></i> <i class ="fa fa-star"></i> <i class ="fa fa-star"></i> <i class ="fa fa-star"></i> <i class ="fa fa-star"></i></p>
+                </div>
+                <div class="human">
+                    <p>전문가 이름 : <span class="badge">전문가4</span></p>
+                    <p>전문가 아이디 : specialist4</p>
+                    <p>작성자 이름 : 김정수</p>
+                    <p>작성자 아이디 : <span class="badge">kim</span></p>
+                    <p>비용 : 5,500,000</p>
+                    <p>요구사항대로 부드러운 느낌을 잘 살려주셨습니다.</p>
+                    <p>평점 : <i class ="fa fa-star"></i> <i class ="fa fa-star"></i> <i class ="fa fa-star"></i> <i class ="fa fa-star"></i> <i class ="fa fa-star-o"></i></p>
+                </div>
+            </div>
+        </section>
+        <footer>Copyright (C) 2020 by MyHome Inc All Rights Reserved.</footer>
+    </div>
+</body>
+</html>
